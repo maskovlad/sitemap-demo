@@ -21,7 +21,7 @@ function getAllProducts() {
 }
 
 export async function getServerSideProps({ res }) {
-  const BASE_URL = 'http://localhost:3000'
+  const BASE_URL = 'https://sitemap-demo-two.vercel.app'
 
   const products = getAllProducts() // Здесь может быть вызов с любого API
 
