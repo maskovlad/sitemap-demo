@@ -31,7 +31,7 @@ export async function getServerSideProps({ res }) {
   })
 
   const staticPaths = fs
-    .readdirSync("pages")
+    .readdirSync(__dirname)
     .filter(staticPage => {
       return ![
         "api",
